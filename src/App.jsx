@@ -5,9 +5,7 @@ function App() {
 
   return (
     <div>
-      <PageContainer>
-        <Header />
-      </PageContainer>
+     e ticaret
     </div>  
   )
 }
