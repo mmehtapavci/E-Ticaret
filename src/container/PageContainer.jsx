@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from '@mui/material/Container';
 
 function PageContainer({children} ) {
   return (
-    <div> {children} </div>
+    <Container style={{ backgroundColor: 'black' }}>{children}</Container>
   )
 }
 
