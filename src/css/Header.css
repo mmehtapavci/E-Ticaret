@@ -1,0 +1,23 @@
+.logo{
+    width:100px ;
+    height:80px ;
+}
+.logo-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(202, 9, 67, 0.548);
+    margin-left: 15px;
+}
+.logo-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 5px 10px;
+    outline: none;
+}
