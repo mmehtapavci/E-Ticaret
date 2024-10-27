@@ -1,8 +1,8 @@
 import React from 'react'
 
-function PageContainer() {
+function PageContainer({children} ) {
   return (
-    <div>PageContainer</div>
+    <div> {children} </div>
   )
 }
 

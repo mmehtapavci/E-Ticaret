@@ -1,11 +1,15 @@
 import { useState } from 'react'
+import './App.css'
+import PageContainer from './container/PageContainer'
 
 
 function App() {
 
   return (
     <div>
-     e ticaret
+      <PageContainer>
+        <Header />
+      </PageContainer>
     </div>  
   )
 }
