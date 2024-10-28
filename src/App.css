@@ -1,11 +1,13 @@
-body{
+body {
   padding: 0;
   margin: 0;
-  background-image: url('./images/background.jpg');
+  background-image: 
+    linear-gradient(rgba(168, 166, 166, 0.5), rgba(109, 105, 105, 0.349)),
+    url('./images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
 .flex-row{
   display: flex;
   flex-direction: row;
