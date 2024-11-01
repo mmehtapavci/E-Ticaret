@@ -4,9 +4,9 @@
 }
 .logo-text{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
-    color: rgba(202, 9, 67, 0.548);
+    color: rgba(196, 11, 67, 0.87);
     margin-left: 15px;
 }
 .logo-bar{
@@ -20,4 +20,12 @@
     border-bottom: 1px solid gray;
     padding: 5px 10px;
     outline: none;
+    margin-right: 10px;
+}
+.icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.icon:hover{
+    cursor: pointer;
 }
