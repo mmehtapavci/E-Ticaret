@@ -35,8 +35,7 @@ function Header() {
       <CiShoppingBasket className='icon' />
       </div>
       
-    </div>
-
+      </div>
     </div>
   )
 }
