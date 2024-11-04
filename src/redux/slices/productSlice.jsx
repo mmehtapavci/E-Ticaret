@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios';
 
 const initialState = {
-    product: [],
+    products: [],
     selectedProduct: {},
     loading:false
 }
@@ -10,7 +10,8 @@ const initialState = {
 const BASE_URL = "https://fakestoreapi.com/products";
 
 export const getAllProducts = createAsyncThunk("getAllProducts", async()=>{
-    axios.get('${BASE_URL}/products');
+   const response =await axios.get('${BASE_URL}/products');
+   return response.data;
 })
 
 export const productSlice = createSlice({
@@ -20,7 +21,13 @@ export const productSlice = createSlice({
         
     },
     extraReducers :(builder) =>{
-
+        builder.addCase(getAllProducts.pending, (state) => {
+            state.loading = true;
+        })
+        builder.addCase(getAllProducts.fulfilled, (state, action) => {
+            state.loading = false;
+            state.products = action.payload;
+        })
     }
 })
 
