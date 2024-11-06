@@ -6,7 +6,7 @@ const initialState = {
     selectedProduct: {},
     loading:false
 }
-
+ 
 const BASE_URL = "https://fakestoreapi.com/products";
 
 export const getAllProducts = createAsyncThunk("getAllProducts", async()=>{
