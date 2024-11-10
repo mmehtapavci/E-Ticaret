@@ -11,7 +11,13 @@ function ProductList() {
   }, []);
 
   return (
-    <div>ProductList</div>
+    <div>
+      {
+        products && product.map((product) =>(
+
+        ))
+      }
+    </div>
   );
 }
 
