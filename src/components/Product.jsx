@@ -8,8 +8,8 @@ function Product({ product }) {
     <div  className='card'>
         <img className='image' src={image} alt="" />
         <div>
-         <p>{title}</p>
-          <h3>{price}</h3>
+         <p className='title' >{title}</p>
+          <h3 className='price' >{price} ₺</h3>
         </div>
     </div>
   )
