@@ -1,16 +1,16 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice , createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios';
 
 const initialState = {
     products: [],
-    selectedProduct: {},
+    selectedProduct : {},
     loading:false
 }
- 
+
 const BASE_URL = "https://fakestoreapi.com/products";
 
 export const getAllProducts = createAsyncThunk("getAllProducts", async()=>{
-    const response =await axios.get('${BASE_URL}/products');
+    const response = await axios.get(`${BASE_URL}`);
     return response.data;
 })
 

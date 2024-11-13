@@ -1,0 +1,15 @@
+.image{
+    width: 165px;
+    height: 210px;
+}
+.card{
+    width: 200px;
+    height: 370px;
+    box-shadow:1px 4px 3px lightgray;
+    border-radius: 10px;
+    margin: 15px;
+}
+.productlist{
+    flex-wrap: wrap;
+    margin-top: 40px;
+}

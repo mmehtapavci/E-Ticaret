@@ -1,6 +1,6 @@
 .logo{
     width:100px ;
-    height:80px ;
+    height:90px ;
 }
 .logo-text{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
@@ -14,6 +14,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top:30px;
 }
 .search-input{
     border: none;
