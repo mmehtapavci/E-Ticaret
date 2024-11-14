@@ -11,6 +11,9 @@ function Product({ product }) {
          <p className='title' >{title}</p>
           <h3 className='price' >{price} ₺</h3>
         </div>
+        <div className='flex-row' >
+          <button className='detail-buton' >Detayına Git</button>
+        </div>
     </div>
   )
 }
