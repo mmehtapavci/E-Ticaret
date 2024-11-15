@@ -1,9 +1,15 @@
 body {
   padding: 0;
   margin: 0;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.774), 
+      rgba(0, 0, 0, 0.849)
+    ),
+    url(/src/images/background2.jfif);
   background-size: cover;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .flex-row{
   display: flex;
