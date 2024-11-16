@@ -11,7 +11,7 @@
     box-shadow:1px 4px 3px rgb(20, 12, 12);
     border-radius: 10px;
     margin: 15px;
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(107, 107, 107, 0.877);
 }
 .card:hover{
     box-shadow: 2px 4px 4px  rgba(82, 81, 81, 0.589);

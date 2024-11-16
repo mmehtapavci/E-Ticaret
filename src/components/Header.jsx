@@ -10,12 +10,16 @@ function Header() {
     const changeTheme = () => {
         const root = document.getElementById("root");
         if (theme){
-          root.style.backgroundColor = "black";
+          root.style.backgroundColor = "rgba(0, 0, 0, 0.8";
           root.style.color ="#fff";
+          root.style.minHeight = "100vh";
+          root.style.height = "100%";
         }
         else {
-          root.style.backgroundColor = "#fff";
+          root.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
           root.style.color = "black";
+          root.style.minHeight = "100vh";
+          root.style.height = "100%";
         }
         setTheme(!theme);
     }
