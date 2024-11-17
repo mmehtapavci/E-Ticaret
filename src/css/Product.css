@@ -8,10 +8,10 @@
 .card{
     width: 200px;
     height: 400px;
-    box-shadow:1px 4px 3px rgb(20, 12, 12);
+    box-shadow:1px 4px 3px rgb(41, 32, 32);
     border-radius: 10px;
     margin: 15px;
-    background-color: rgba(107, 107, 107, 0.877);
+    background-color: rgb(148, 141, 141);
 }
 .card:hover{
     box-shadow: 2px 4px 4px  rgba(82, 81, 81, 0.589);
