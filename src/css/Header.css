@@ -8,13 +8,13 @@
     font-weight: 600;
     color: rgba(196, 11, 67, 0.795);
     margin-left: 15px;
+    margin-top: 50px;
 }
 .logo-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top:30px;
 }
 .search-input{
     border: none;
