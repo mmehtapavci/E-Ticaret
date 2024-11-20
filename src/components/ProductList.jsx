@@ -9,8 +9,6 @@ function ProductList() {
     const dispatch = useDispatch();
     const { products } = useSelector((store) => store.product);
   
-  
-
   useEffect(() => {
     dispatch(getAllProducts())
   }, [])
