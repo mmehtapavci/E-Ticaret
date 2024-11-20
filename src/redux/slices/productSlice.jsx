@@ -9,7 +9,7 @@ const initialState = {
     loading: false // Yüklenme durumunu takip etmek için boolean
 };
 
-const BASE_URL = "https://fakestoreapi.com/products";
+const BASE_URL = "https://fakestoreapi.com/products"; // API çağrısı yapılır.
 
 // Asenkron işlem için createAsyncThunk kullanılıyor.
 // Tüm ürünleri API'den çeker ve verileri döndürür.
@@ -18,11 +18,13 @@ export const getAllProducts = createAsyncThunk("getAllProducts", async()=>{
     return response.data;
 })
 
+// Redux slice tanımlanıyor.
+// Bu slice, ürünle ilgili durumu ve işlemleri yönetir.
 export const productSlice = createSlice({
     name: "product", // Slice adı
     initialState, // Başlangıç durumu
     reducers: {
-        // reducers burada tanımlanabilir, fakat şu an kullanılmamış
+        // reducers burada tanımlanabilir, fakat şu an kullanılmamış.
     },
     extraReducers: (builder) => {
         // Asenkron işlemler için durumları yönetmek üzere extraReducers kullanılır.
