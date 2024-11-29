@@ -2,6 +2,9 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import { setSelectedProduct } from '../redux/slices/productSlice';
+import { useSelector } from 'react-redux';
+
+
 
 function ProductDetails() {
   // Product jsx den gönderilen id'yi useParams ile yakalıyoruz.
