@@ -25,6 +25,9 @@ export const productSlice = createSlice({
     initialState, // Başlangıç durumu
     reducers: {
         // reducers burada tanımlanabilir, fakat şu an kullanılmamış.
+        setSelectedProduct: (state, action)=> {
+            state.selectedProduct = action,payload;
+        }
     },
     extraReducers: (builder) => {
         // Asenkron işlemler için durumları yönetmek üzere extraReducers kullanılır.
@@ -39,7 +42,7 @@ export const productSlice = createSlice({
 });
 
 // Reducer'lar için export işlemi yapılır. (Şu an bir reducer tanımlanmadığı için boş.)
-export const { } = productSlice.actions;
+export const { setSelectedProduct } = productSlice.actions;
 
 // Bu slice'ın reducer'ı dışa aktarılır ve store'da kullanılabilir.
 export default productSlice.reducer;
