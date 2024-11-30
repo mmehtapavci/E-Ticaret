@@ -26,7 +26,7 @@ export const productSlice = createSlice({
     reducers: {
         // reducers burada tanımlanabilir, fakat şu an kullanılmamış.
         setSelectedProduct: (state, action)=> {
-            state.selectedProduct = action,payload;
+            state.selectedProduct = action.payload;
         }
     },
     extraReducers: (builder) => {

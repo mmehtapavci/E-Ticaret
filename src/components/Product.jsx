@@ -16,7 +16,7 @@ function Product({ product }) {
           <h3 className='price' >{price} ₺</h3>
         </div>
         <div className='flex-row' >
-          <button onClick={() => navigate("/product-details/ + id") } className='detail-buton' >Detayına Git</button>
+          <button onClick={() => navigate("/product-details/" + id) } className='detail-buton' >Detayına Git</button>
         </div>
     </div>
   )
