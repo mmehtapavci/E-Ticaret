@@ -29,13 +29,13 @@ function ProductDetails() {
 
   return (
     <div className='detail-image' >
-      <div>
+      <div className='detail-card' >
         <img src={image} className='detailimage-card' alt="" />
       </div>
       <div>
         <h1 className='detailtitle'> {title} </h1>
         <h3 className='detaildescription'>{description} </h3>
-        <h1 className='detailprice' > {price} </h1>
+        <h1 className='detailprice' > {price}₺ </h1>
       </div>
     </div> // Seçili ürünün başlığını ekranda gösteriyoruz
   );
