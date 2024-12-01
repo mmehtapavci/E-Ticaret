@@ -1,10 +1,9 @@
 .detail-image{
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: rgb(245, 225, 218);
-    height: 500px;
     height: 50%;
     border-radius: 10px;
-    padding: 35px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,7 +13,7 @@
 }
 .detailimage-card{
     width: 300px;
-    height:400px;
+    height:380px;
     border-radius: 20px;
 }
 .detailtitle{
@@ -22,10 +21,11 @@
 }
 .detaildescription{
     font-family: "Playfair Display", serif;
-    font-size: 18px;
+    font-size: 17px;
+    color: rgb(39, 35, 35);
 }
 .detailprice{
     font-family: "Playfair Display", serif;
     color: red;
-    font-size: 35px;
+    font-size: 30px;
 }
