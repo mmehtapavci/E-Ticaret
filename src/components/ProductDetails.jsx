@@ -7,7 +7,7 @@ import { useEffect } from 'react'; // React'ın useEffect hook'unu import ediyor
 import '../css/ProductDetails.css';
 
 function ProductDetails() {
-  const { id } = useParams(); // URL parametresinden gelen "id" bilgisini alıyoruz
+  const { id } = useParams(); // URL parametresinden gelen "id" bilgisini alıyoruz.Bu, React Router tarafından sağlanan bir fonksiyondur. URL'deki dinamik parametreleri almak için kullanılır.
   
   const { products, selectedProduct } = useSelector((store) => store.product); // Redux store'dan ürünler ve seçili ürünü alıyoruz
 
