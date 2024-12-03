@@ -29,3 +29,25 @@
     color: rgb(248, 18, 18);
     font-size: 30px;
 }
+.counterdiv{
+    display: flex;
+    align-items: center;
+}
+.counter-icon{
+    font-size: 40px;
+    margin: 0 5px;
+}
+.zero{
+    font-size: 35px;
+}
+.basket-btn{
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin-top: 35px;
+    width: 15%;
+    text-align: center;
+    color:#fff;
+    font-weight: 500;
+}

@@ -5,6 +5,11 @@ import { setSelectedProduct } from '../redux/slices/productSlice'; // Redux acti
 import { useSelector } from 'react-redux'; // Redux'taki verileri okumak için useSelector hook'unu import ediyoruz
 import { useEffect } from 'react'; // React'ın useEffect hook'unu import ediyoruz (side-effect işlemleri için)
 import '../css/ProductDetails.css';
+import { useState } from 'react';
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
+
+
 
 function ProductDetails() {
   const { id } = useParams(); // URL parametresinden gelen "id" bilgisini alıyoruz.Bu, React Router tarafından sağlanan bir fonksiyondur. URL'deki dinamik parametreleri almak için kullanılır.
@@ -13,7 +18,17 @@ function ProductDetails() {
 
   const { price, image, title, description } = selectedProduct; // Seçili üründen bazı bilgileri destructuring ile çekiyoruz
 
+  const [count , setCount]= useState(0);
+
   const dispatch = useDispatch(); // Redux store'a action dispatch etmek için useDispatch hook'unu kullanıyoruz
+
+  const increment = () => {
+    setCount(count + 1)
+  }
+
+  const decrement = () => {
+    setCount(count - 1)
+  }
 
   useEffect(() => {
     getProductById(); // Belirtilen id'ye göre ürünü bul ve seçili ürüne ata
@@ -36,6 +51,14 @@ function ProductDetails() {
         <h1 className='detailtitle'> {title} </h1>
         <h3 className='detaildescription'>{description} </h3>
         <h1 className='detailprice' > {price}₺ </h1>
+        <div className='counterdiv' >
+          <CiCirclePlus onClick={increment} className='counter-icon' /> 
+          <span className='zero' > {count} </span>
+          <CiCircleMinus onClick={decrement}  className='counter-icon' />
+        </div>
+        <div className='basket-btn' >
+            Sepete Ekle
+        </div>
       </div>
     </div> // Seçili ürünün başlığını ekranda gösteriyoruz
   );
