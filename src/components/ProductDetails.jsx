@@ -57,7 +57,10 @@ function ProductDetails() {
           <CiCircleMinus onClick={decrement}  className='counter-icon' />
         </div>
         <div className='basket-btn' >
-            Sepete Ekle
+          <button onClick={addBasket} >
+          Sepete Ekle
+          </button>
+            
         </div>
       </div>
     </div> // Seçili ürünün başlığını ekranda gösteriyoruz
