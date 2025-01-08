@@ -21,9 +21,13 @@ export const basketSlice = createSlice({
     initialState,
     reducers: {
         addToBasket :(state, action) => {
-            const findProduct = product && product.find((product) => product.id === action.payload.id);
+            const findProduct = state.products && state.products.find((product) => product.id === action.payload.id);
             if (findProduct) {
                 //daha önce eklenmiştir.
+                const extractedProducts = state.products.filter((product) => product.id === action.payload.id);
+                findProduct.count += action.payload.count;
+                state.products = [...extractedProducts, findProduct];
+                writeFromBasketToStore(state.products);
             }else{
                 state.products = [...state.products, action.payload];
                 writeFromBasketToStore(state.products);
@@ -33,5 +37,5 @@ export const basketSlice = createSlice({
 })
 
 
-export const { } = basketSlice.actions;
+export const { addToBasket} = basketSlice.actions;
 export default basketSlice.reducer;

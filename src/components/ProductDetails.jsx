@@ -8,6 +8,7 @@ import '../css/ProductDetails.css';
 import { useState } from 'react';
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
+import { addToBasket } from '../redux/slices/basketSlice';
 
 
 
@@ -28,6 +29,18 @@ function ProductDetails() {
 
   const decrement = () => {
     setCount(count - 1)
+  }
+
+  const addBasket = () => {
+    const payload ={
+      id,
+      price,
+      image,
+      title,
+      description,
+      count
+    }
+    dispatch(addToBasket(payload));
   }
 
   useEffect(() => {
